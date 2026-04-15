@@ -9,6 +9,7 @@ class Launch{
         System.out.println("Enter the number of students");
 
         int n = scan.nextInt();
+        int sum = 0;
 
         int[] marks = new int[n];
 
@@ -16,6 +17,7 @@ class Launch{
 
             System.out.println("Enter the marks of student : "+(i+1));
             marks[i] = scan.nextInt();
+            sum = sum+marks[i];
 
         }
 
@@ -26,6 +28,8 @@ class Launch{
             System.out.println("the marks of student "+(i+1)+" is : " + marks[i]);
 
         }
+
+        System.out.println("The Average is : " + (sum/n));
 
     }
 
